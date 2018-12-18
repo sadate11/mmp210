@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+
+}
+
+body {
+  background-color: #dfe6e9;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+
+canvas {
+  display: block;
+  margin: 0 auto;
+
+}
+
+p {
+  text-align: center;
+}
