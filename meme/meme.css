@@ -1,0 +1,20 @@
+html {
+  height: 100%;
+
+}
+
+body {
+  background-color: #9CC5F4;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+
+canvas {
+  display: block;
+  margin: 0 auto;
+
+}
