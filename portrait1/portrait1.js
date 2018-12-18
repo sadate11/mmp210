@@ -9,18 +9,6 @@ function setup() {
 }
 
 function draw() {
-//hair
-  var hairColor = color("#242424");
-  var hairTopY = 40;
-  var hairBtmY = 20;
-  var hairX = 110;
-  var hairWidth = 170;
-  var hairTopHeight = 200;
-  var hairBtmHeight = 100;
-fill(hairColor);
-rect(hairX, hairTopY, hairWidth, hairTopHeight, 90);
-rect(hairX, hairBtmY, hairWidth, hairBtmHeight, 30);
-
 
 //ears
 var skinColor = color(141, 85, 36);
@@ -32,6 +20,7 @@ stroke(24);
 fill(skinColor);
 rect(earLeftX, earY, 50,50, earSize);
 rect(earRightX, earY, 50,50, earSize);
+
 //neck
 var neckHeight = 80;
 var neckY = 200;
@@ -46,7 +35,7 @@ var torsoY = 270;
 var torsoWidth = 300;
 var torsoHeight = 200;
 stroke(24);
-fill(239, 89, 86);
+fill(255, 255, 255);
 rect(torsoX, torsoY, torsoWidth, torsoHeight, 80);
 
 //head
@@ -57,14 +46,7 @@ stroke(24);
 fill(skinColor);
 rect(headX, headY, 170, 200, headSize);
 
-//hairline
-var hairLineX = 120;
-var hairlineY = 40;
-var hairlineWidth = 150;
-var hairlineHeight = 40;
-noStroke();
-fill(hairColor);
-rect(hairLineX, hairlineY, hairlineWidth, hairlineHeight, 75)
+
 
 //eyes
 var eyeSize = 40;
@@ -82,13 +64,7 @@ noStroke();
 ellipse(150, pupilY, pupilSize, 20);
 ellipse(240, pupilY, pupilSize, 20);
 
-// glair
-var glairY = 135;
-var glairRightX = 245;
-var glairLeftX = 155;
-fill(255,255, 255)
-ellipse(glairLeftX, glairY, 7, 7);
-ellipse(glairRightX, glairY, 7, 7);
+
 
 //mouth
 var white = color(255,255,255);
@@ -101,9 +77,6 @@ stroke(24);
 noFill()
 arc(194, 165, 35, 25, TWO_PI, PI);
 
-// Beard
-noStroke();
-fill(hairColor);
-ellipse(194, 245, 50,15);
+
 
 }

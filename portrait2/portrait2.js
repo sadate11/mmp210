@@ -57,14 +57,6 @@ stroke(24);
 fill(skinColor);
 rect(headX, headY, 170, 200, headSize);
 
-//hairline
-var hairLineX = 120;
-var hairlineY = 40;
-var hairlineWidth = 150;
-var hairlineHeight = 40;
-noStroke();
-fill(hairColor);
-rect(hairLineX, hairlineY, hairlineWidth, hairlineHeight, 75)
 
 //eyes
 var eyeSize = 40;
@@ -82,13 +74,7 @@ noStroke();
 ellipse(150, pupilY, pupilSize, 20);
 ellipse(240, pupilY, pupilSize, 20);
 
-// glair
-var glairY = 135;
-var glairRightX = 245;
-var glairLeftX = 155;
-fill(255,255, 255)
-ellipse(glairLeftX, glairY, 7, 7);
-ellipse(glairRightX, glairY, 7, 7);
+
 
 //mouth
 var white = color(255,255,255);
@@ -101,9 +87,5 @@ stroke(24);
 noFill()
 arc(194, 165, 35, 25, TWO_PI, PI);
 
-// Beard
-noStroke();
-fill(hairColor);
-ellipse(194, 245, 50,15);
 
 }
