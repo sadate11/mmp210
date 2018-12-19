@@ -16,14 +16,14 @@ var sensorValue;
 
 function setup() {
     createCanvas(800, 600);
-    
+
     serial = new p5.SerialPort();
     serial.on('connected', serverConnected);
     serial.on('open', portOpen);
     serial.on('data', serialEvent);
     serial.on('error', serialError);
     serial.on('close', portClose);
-    
+
     serial.open(portName);
 }
 
@@ -54,15 +54,15 @@ function serialEvent() {
 
 function draw() {
     var c = map(sensorValue, 0, 1023, 0, 200);
-    
-    // sky
-    background(c, c, c + 0);
-    
+
+    // background
+    background(c, c, c + 20);
+
     var y = map(sensorValue, 0, 1023, height, 0);
-    
+
     // sun
     noStroke();
     fill('gold');
     ellipse(320, y, 50);
-    
+
 }
