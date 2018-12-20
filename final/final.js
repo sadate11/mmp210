@@ -3,6 +3,18 @@ var portName = "/dev/cu.usbmodem14101";
 var sensorValue;
 var baby;
 var boy;
+var teenager;
+var graduate;
+var professional;
+var couple;
+var married;
+var oldcouple;
+var old;
+var grave;
+var babycry;
+var cheer;
+var crickets;
+var wedding;
 
 
 function setup() {
@@ -19,8 +31,24 @@ function setup() {
     
     baby = loadImage("01.png");
     boy = loadImage("02.png");
+    teenager = loadImage("03.png");
+    graduate = loadImage("04.png");
+    professional = loadImage("05.png");
+    couple = loadImage("06.png");
+    married = loadImage("07.png");
+    oldcouple = loadImage("08.png");
+    old = loadImage("09.png");
+    grave = loadImage("10.png")
     
     
+    
+}
+
+function preload() {
+     babycry= loadSound("babycry.mp3");
+    cheer = loadSound("cheer.wav");
+    crickets = loadSound("crickets.mp3");
+    wedding = loadSound("wedding.mp3");
 }
 
 
@@ -63,6 +91,6 @@ function draw() {
     fill('gold');
     ellipse(320, y, 80);
     fill(255);
-    image(baby,x, height-sailboat.height, sailboat.width, sailboat.height);
+    image(baby,x, baby-sailboat.height, baby.width, baby.height);
 
 }
