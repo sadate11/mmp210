@@ -1,17 +1,8 @@
 var serial;
 var portName = "/dev/cu.usbmodem14101";
 var sensorValue;
-
-//graphic elements
- baby = loadImage("01.png");
- boy = loadImage("02.png");
- teenager = loadImage("03.png");
- graduate = loadImage("04.png");
- professional = loadImage("05.png");
- couple = loadImage("06.png");
- married = loadImage("07.png");
- oldcouple = loadImage("08.png");
- old = loadImage("09");
+var baby;
+var boy;
 
 
 function setup() {
@@ -25,7 +16,13 @@ function setup() {
     serial.on('close', portClose);
 
     serial.open(portName);
+    
+    baby = loadImage("01.png");
+    boy = loadImage("02.png");
+    
+    
 }
+
 
 function serverConnected() {
     console.log("connected");
@@ -55,14 +52,17 @@ function serialEvent() {
 function draw() {
     var c = map(sensorValue, 0, 1023, 0, 200);
 
-    // background
-    background(c, c, c + 20);
+    // sky
+    background(c, c, c + 0);
 
     var y = map(sensorValue, 0, 1023, height, 0);
+    var x = map(sensorValue, 0, 1023, height, 0);
 
     // sun
     noStroke();
     fill('gold');
-    ellipse(320, y, 50);
+    ellipse(320, y, 80);
+    fill(255);
+    image(baby,x, height-sailboat.height, sailboat.width, sailboat.height);
 
 }

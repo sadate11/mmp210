@@ -9,7 +9,7 @@ function preload() {
     baby = loadImage("baby.png");
     grave = loadImage("gravestone.png");
     sensor = loadImage("potentiometer.jpg");
-    
+
 }
 
 function setup() {
@@ -32,15 +32,15 @@ function draw() {
         // potientiometer image
         image(sensor, 400, 200);
     } else if (slide == 2) {
-        text("theme: Human Evolution", 200, 40);
+        text("theme: Human developement in Society", 200, 40);
         image(baby, 200, 100);
         image(grave, 400, 100);
     } else if (slide == 3) {
-        text("The potentiometer will control the human evolution throughout time.", width/2, height/2);
+        text("The potentiometer will control the human developement throughout time.", width/2, height/2);
         textSize(20);
     }
-    
-    
+
+
 }
 
 function mousePressed() {
